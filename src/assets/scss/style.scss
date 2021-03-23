@@ -1,0 +1,113 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+
+.card-header:not(.content-center) > .c-icon:first-child {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+
+label.required:after {
+  content: ' *';
+  color: red;
+}
+
+// body {
+//   overflow: auto!important;
+// }
+
+.select-link {
+  font-size: 10pt;
+  color: rgb(28, 28, 165);
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: lightblue;
+  }
+}
+
+.month-picker__container.month-picker--default {
+  z-index: 999;
+  right: 0;
+  top: calc(1.5em + 0.75rem + 2px)!important;
+  background-color: white;
+}
+
+.month-picker-input {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  height: calc(1.5em + 0.75rem + 2px);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+
+  &:focus {
+    -webkit-transition: lightblue 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: lightblue 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition:lightblue 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: lightblue 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  }
+}
+
+.vs__dropdown-toggle {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  z-index: 9999999!important;
+}
+
+// .vs--disabled {
+//   background-color: #e9ecef;
+// }
+
+.vs--disabled .vs__clear, .vs--disabled .vs__dropdown-toggle, .vs--disabled .vs__open-indicator, .vs--disabled .vs__search, .vs--disabled .vs__selected {
+  background-color: #e9ecef!important;
+  outline: 0!important;
+  cursor: auto!important;
+}
+
+.b-toaster {
+  z-index: 50000!important
+}
+
+.button-footer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.v-select.is-invalid {
+  .vs__dropdown-toggle {
+    border-color: #dc3545!important;
+  }
+}
+
+
+.row__sub-label {
+  font-size: 8pt!important;
+  color: gray!important;
+}
+
+.modal-backdrop {
+  opacity: 0.6!important;
+  background: #2c3e50!important;
+}
+
+.modal {
+  z-index: 999999!important;
+}
